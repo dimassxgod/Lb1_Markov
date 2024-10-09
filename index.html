@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variant 3 Markov</title>
+</head>
+<body>
+
+	<h1>Лабораторна робота 1 Марков</h1>
+	
+    <p><strong>E = mc<sup>2</sup></strong>, where <strong>E</strong> - energy of the object, <strong>m</strong> - it's mass, <strong>c</strong> - speed of light in vacuum, equals to 299 792 458 <em>m/s</em>.</p>
+
+    <label for="students">Список студентів:</label>
+    <select id="students" name="students">
+        <option value="markov">Марков Д.В.</option>
+        <option value="apostol">Апостол І.А.</option>
+        <option value="sukhykh">Сухих Б.М.</option>
+        <option value="podkosova">Подкосова К.С.</option>
+    </select>
+
+    <h2>Зміст книги: "48 законів влади"</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th>Назва розділу</th>
+            <th>Сторінка</th>
+        </tr>
+        <tr>
+            <td><a href="chapter1.html">Закон 1: Ніколи не перевершуй свого наставника</a></td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Закон 2: Ніколи не довіряй надто друзям, вчися використовувати ворогів</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Закон 3: Приховуй свої наміри</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Закон 4: Завжди говори менше, ніж необхідно</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Закон 5: Багато що залежить від репутації – захищай її своїм життям</td>
+            <td>40</td>
+        </tr>
+    </table>
+
+    <h2>Форма для введення інформації про студента</h2>
+    <form action="/submit" method="GET">
+        <label for="student-name">ПІБ студента:</label>
+        <input type="text" id="student-name" name="student-name" required>
+
+        <label for="student-email">Електронна пошта студента:</label>
+        <input type="email" id="student-email" name="student-email" required>
+
+        <label for="student-age">Вік студента:</label>
+        <input type="number" id="student-age" name="student-age" min="16" max="100" required>
+
+        <label for="student-gender">Стать студента:</label>
+        <select id="student-gender" name="student-gender">
+            <option value="male">Чоловіча</option>
+            <option value="female">Жіноча</option>
+        </select>
+
+        <label for="student-course">Курс студента:</label>
+        <input type="text" id="student-course" name="student-course" required>
+
+        <button type="submit">Відправити</button>
+    </form>
+</body>
+</html>
